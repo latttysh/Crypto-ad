@@ -1,0 +1,19 @@
+.block{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  .line{
+    width: 8px;
+    height: 21px;
+    background: #0491FB;
+    border-radius: 2px;
+  }
+  .title{
+    font-family: Bold;
+    font-size: 25px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+}

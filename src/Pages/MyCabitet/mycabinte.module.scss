@@ -1,3 +1,171 @@
-.title{
-  font-size: 50px;
+.cabinet{
+  padding: 40px 30px;
+  //width: 100%;
+  .user{
+    display: flex;
+    gap: 40px;
+    background: #0D1017;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 20px 40px;
+    max-height: 320px;
+    margin-bottom: 40px;
+    .info{
+      .avatar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        .first__circle{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 180px;
+          height: 180px;
+          background-color: rgba(#21262D, 0.3);
+          border-radius: 100%;
+          border: 1px solid #21262D;
+          .second__circle{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 160px;
+            border-radius: 100%;
+            background: #21262D;
+            border: 1px solid #21262D;
+            img{
+              filter: drop-shadow(0px 0px 30px rgba(4, 145, 251, 0.25));
+            }
+          }
+        }
+      }
+      .nickname{
+        font-family: Bold, sans-serif;
+        font-size: 20px;
+        line-height: 21px;
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .edit{
+        width: 218px;
+        height: 48px;
+        background: #0491FB;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+      }
+    }
+    .data{
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 85px 45px 85px 40px;
+      gap: 0 20px;
+      grid-template-areas:
+    "balance ip_address"
+    "balance auth"
+    "email__block auth"
+    "referal .";
+      .block{
+        background: #121721;
+        border-radius: 10px;
+        padding: 15px 20px;
+        //margin-bottom: 20px;
+      }
+      .balance{
+        grid-area: balance;
+        .header{
+          .title{
+            color: #8B949E;
+            font-size: 13px;
+            opacity: 0.5;
+            flex-shrink: 0;
+            margin-right: 8vw;
+          }
+          .manage{
+            flex-shrink: 0;
+          }
+          display: flex;
+          margin-bottom: 2px;
+        }
+        .count{
+          font-family: Bold;
+          font-size: 40px;
+          line-height: 47px;
+          color: white;
+          margin-bottom: 2px;
+        }
+        .valute{
+          color: #323846;
+        }
+      }
+      .email__block{
+        grid-area: email__block;
+        .title{
+          color: #8B949E;
+          font-size: 13px;
+          opacity: 0.5;
+          margin-bottom: 5px;
+        }
+        .email{
+          font-family: Bold;
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+        }
+      }
+      .referal{
+        grid-area: referal;
+        .title{
+          color: #8B949E;
+          font-size: 13px;
+          opacity: 0.5;
+          margin-bottom: 5px;
+        }
+        .link{
+          font-size: 16px;
+          line-height: 19px;
+          font-family: Bold;
+          color: white;
+        }
+      }
+      .ip_address{
+        grid-area: ip_address;
+        .title{
+          color: #8B949E;
+          font-size: 13px;
+          opacity: 0.5;
+          margin-bottom: 5px;
+        }
+        .ip{
+          font-family: Bold;
+          font-size: 16px;
+          line-height: 19px;
+          color: white;
+        }
+      }
+      .auth{
+        grid-area: auth;
+        .title{
+          margin-bottom: 5px;
+          color: #8B949E;
+          opacity: 0.5;
+          font-size: 13px;
+        }
+        .ip{
+          font-family: Bold;
+          font-size: 16px;
+          line-height: 19px;
+          margin-bottom: 7px;
+          color: white;
+        }
+      }
+
+    }
+  }
 }
