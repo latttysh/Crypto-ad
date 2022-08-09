@@ -41,6 +41,16 @@ html {
   src: local('Thin'), url(./assets/fonts/Roboto-Thin.ttf);
 }
 
+.container{
+  padding: 40px 0;
+  max-width: 1124px;
+  margin: 0 auto;
+}
+
+
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   background: #010409;
@@ -50,6 +60,7 @@ body {
 }
 .App{
   display: flex;
+  gap: 15px;
 }
 /**
  * Render the `main` element consistently in IE.

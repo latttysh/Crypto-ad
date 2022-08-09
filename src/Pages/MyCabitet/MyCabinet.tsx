@@ -1,6 +1,8 @@
 import React, {FunctionComponent} from 'react';
 import s from "./mycabinte.module.scss"
 import Title from "../../Components/Title/Title";
+import StatsBlock from "../../Components/StatsBlock/StatsBlock";
+import FinanceBlock from "../../Components/FinanceBlock/FinanceBlock";
 import avatar from "../../assets/img/MyCabinet/avatar.png"
 
 interface OwnProps {
@@ -73,6 +75,21 @@ const MyCabinet: FunctionComponent<Props> = (props) => {
                 </div>
             </div>
             <Title title={"Общая статистика"}/>
+            <div className={s.stats}>
+                <StatsBlock/>
+                <StatsBlock/>
+                <StatsBlock/>
+                <StatsBlock/>
+            </div>
+            <Title title={"Финансовая статистика"}/>
+            <div className={s.finance}>
+                <FinanceBlock/>
+                <FinanceBlock/>
+                <FinanceBlock/>
+                <FinanceBlock/>
+                <FinanceBlock/>
+                <FinanceBlock/>
+            </div>
         </div>
     );
 };

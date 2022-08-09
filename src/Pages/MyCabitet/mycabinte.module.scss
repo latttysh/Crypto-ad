@@ -1,5 +1,5 @@
 .cabinet{
-  padding: 40px 30px;
+  //padding: 40px 30px;
   //width: 100%;
   .user{
     display: flex;
@@ -167,5 +167,18 @@
       }
 
     }
+  }
+  .stats{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .finance{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 }

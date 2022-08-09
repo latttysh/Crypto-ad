@@ -1,0 +1,38 @@
+.statsblock{
+  width: 266px;
+  max-width: 90%;
+  background: #0D1017;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  .circle{
+    padding: 13px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    background: #0491FB;
+    box-shadow: 0px 0px 20px rgba(4, 145, 251, 0.35);
+  }
+  .content{
+    .title{
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 16px;
+      color: #8B949E;
+      opacity: 0.5;
+      margin-bottom: 10px;
+    }
+    .count{
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      color: #FFFFFF;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.financeblock{
+  background: #0D1017;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+  &::before{
+    position: absolute;
+    content: '';
+    display: block;
+    height: 80%;
+    width: 5px;
+    background: #0491FB;
+    border-radius: 50px;
+    left: 0;
+  }
+  .title{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  .deposit{
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #8B949E;
+    margin-bottom: 10px;
+  }
+  .earned{
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #8B949E;
+    margin-bottom: 15px;
+  }
+  .count{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+  }
+}
