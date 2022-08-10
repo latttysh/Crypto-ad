@@ -43,10 +43,20 @@ html {
 
 .container{
   padding: 40px 0;
-  max-width: 1124px;
+  width: 1250px;
+  max-width: 90%;
   margin: 0 auto;
 }
 
+a{
+  text-decoration: none;
+}
+
+.main{
+  z-index: 0;
+  max-width: 100%;
+  margin-left: 240px;
+}
 
 *{
   box-sizing: border-box;
@@ -59,8 +69,8 @@ body {
   font-size: 14px;
 }
 .App{
-  display: flex;
-  gap: 15px;
+  /*display: flex;*/
+  /*gap: 250px;*/
 }
 /**
  * Render the `main` element consistently in IE.
@@ -89,7 +99,6 @@ h1 {
  */
 
 hr {
-  box-sizing: content-box; /* 1 */
   height: 0; /* 1 */
   overflow: visible; /* 2 */
 }
@@ -276,7 +285,6 @@ fieldset {
  */
 
 legend {
-  box-sizing: border-box; /* 1 */
   color: inherit; /* 2 */
   display: table; /* 1 */
   max-width: 100%; /* 1 */
@@ -307,7 +315,6 @@ textarea {
 
 [type="checkbox"],
 [type="radio"] {
-  box-sizing: border-box; /* 1 */
   padding: 0; /* 2 */
 }
 

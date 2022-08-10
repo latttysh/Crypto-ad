@@ -1,7 +1,10 @@
 .sidebar{
+  position: fixed;
   padding: 40px 20px;
   background: #0D1017;
   border-right: 1px solid rgba(255, 255, 255, 0.03);
+  flex-shrink: 0;
+  height: 100vh;
   .logo{
     margin-bottom: 43px;
   }
@@ -17,6 +20,9 @@
       border-radius: 10px;
       cursor: pointer;
       transition: background 0.2s ease-in-out;
+      svg{
+        width: 20px;
+      }
       &:hover{
         svg{
           path{
@@ -25,6 +31,9 @@
         }
         color: white;
         background: #0C1C2E;
+      }
+      .title{
+        color: white;
       }
     }
 

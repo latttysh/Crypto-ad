@@ -12,9 +12,9 @@ type Props = OwnProps;
 
 const MyCabinet: FunctionComponent<Props> = (props) => {
     return (
-        <div className={s.cabinet}>
-            <Title title={"Информация пользователя"}/>
-            <div className={s.user}>
+            <div className={s.cabinet}>
+                <Title title={"Информация пользователя"}/>
+                <div className={s.user}>
                 <div className={s.info}>
                     <div className={s.avatar}>
                         <div className={s.first__circle}>
@@ -74,23 +74,23 @@ const MyCabinet: FunctionComponent<Props> = (props) => {
 
                 </div>
             </div>
-            <Title title={"Общая статистика"}/>
-            <div className={s.stats}>
+                <Title title={"Общая статистика"}/>
+                            <div className={s.stats}>
                 <StatsBlock/>
                 <StatsBlock/>
                 <StatsBlock/>
                 <StatsBlock/>
             </div>
-            <Title title={"Финансовая статистика"}/>
-            <div className={s.finance}>
-                <FinanceBlock/>
-                <FinanceBlock/>
-                <FinanceBlock/>
-                <FinanceBlock/>
-                <FinanceBlock/>
-                <FinanceBlock/>
+                <Title title={"Финансовая статистика"}/>
+                <div className={s.finance}>
+                    <FinanceBlock/>
+                    <FinanceBlock/>
+                    <FinanceBlock/>
+                    <FinanceBlock/>
+                    <FinanceBlock/>
+                    <FinanceBlock/>
+                </div>
             </div>
-        </div>
     );
 };
 
