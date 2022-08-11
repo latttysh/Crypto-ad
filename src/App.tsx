@@ -6,6 +6,7 @@ import Sidebar from "./Components/Sidebar/Sidebar";
 import Login from "./Pages/Login/Login";
 import Registration from "./Pages/Registration/Registration";
 import News from "./Pages/News/News";
+import Finance from "./Pages/Finance/Finance";
 import {
     Routes,
     Route,
@@ -26,6 +27,7 @@ function App() {
                         <Route path="/activate" element={<Activate/>}/>
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/registration" element={<Registration/>}/>
+                        <Route path="/finance" element={<Finance/>}/>
                         <Route path="/news" element={<News/>}/>
                     </Routes>
 
