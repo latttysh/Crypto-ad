@@ -58,6 +58,9 @@ const Referal: FunctionComponent<Props> = (props) => {
                 </div>
               </div>
             </div>
+          <div className={s.myreferals}>
+            <div className={s.title}>Мои рефералы</div>
+          </div>
         </div>
     );
 };
