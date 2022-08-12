@@ -7,6 +7,7 @@ import Login from "./Pages/Login/Login";
 import Registration from "./Pages/Registration/Registration";
 import News from "./Pages/News/News";
 import Finance from "./Pages/Finance/Finance";
+import Referal from "./Pages/Referal/Referal";
 import {
     Routes,
     Route,
@@ -28,6 +29,7 @@ function App() {
                         <Route path="/login" element={<Login/>}/>
                         <Route path="/registration" element={<Registration/>}/>
                         <Route path="/finance" element={<Finance/>}/>
+                        <Route path="/referal" element={<Referal/>}/>
                         <Route path="/news" element={<News/>}/>
                     </Routes>
 

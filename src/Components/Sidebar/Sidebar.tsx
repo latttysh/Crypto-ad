@@ -59,10 +59,12 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                         <span className={s.title}>Финансы</span>
                     </div>
                 </NavLink>
-                <div className={s.item}>
-                    <Referal/>
-                    <span className={s.title}>Реферальная программа</span>
-                </div>
+                <NavLink to={"/referal"}>
+                    <div className={s.item}>
+                        <Referal/>
+                        <span className={s.title}>Реферальная программа</span>
+                    </div>
+                </NavLink>
                 <div className={s.divider}>
                     <span className={s.title}>Прочее</span>
                     <div className={s.line}></div>
