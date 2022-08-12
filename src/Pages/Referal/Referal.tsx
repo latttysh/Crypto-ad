@@ -1,6 +1,7 @@
 import React, {FunctionComponent} from 'react';
 import s from "./referal.module.scss"
 import Title from "../../Components/Title/Title";
+import ReferalBlock from "../../Components/ReferalBlock/ReferalBlock";
 
 interface OwnProps {
 }
@@ -60,6 +61,15 @@ const Referal: FunctionComponent<Props> = (props) => {
             </div>
           <div className={s.myreferals}>
             <div className={s.title}>Мои рефералы</div>
+            <div className={s.input}>
+              <label>Поиск по рефералам</label>
+              <input type="text" placeholder={"Имя пользователя или почта"}/>
+            </div>
+            <div className={s.block}>
+              <ReferalBlock/>
+              <ReferalBlock/>
+              <ReferalBlock/>
+            </div>
           </div>
         </div>
     );

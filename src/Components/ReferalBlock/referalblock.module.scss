@@ -1,0 +1,76 @@
+.referalblock{
+  background: #0D1017;
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 334px;
+  width: 100%;
+  .avatar{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    .first__circle{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 180px;
+      height: 180px;
+      background-color: rgba(#21262D, 0.3);
+      border-radius: 100%;
+      border: 1px solid #21262D;
+      .second__circle{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 160px;
+        height: 160px;
+        border-radius: 100%;
+        background: #21262D;
+        border: 1px solid #21262D;
+        .img{
+          width: 200px;
+        }
+      }
+    }
+  }
+  .info{
+    margin-bottom: 20px;
+    .nickname{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-bottom: 5px;
+    }
+    .email{
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      color: #323846;
+    }
+  }
+  .stats{
+    .item{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .title{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #8B949E;
+      }
+      .counter{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+      }
+      &:not(:last-child){
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
