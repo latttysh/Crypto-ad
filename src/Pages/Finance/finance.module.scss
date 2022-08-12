@@ -1,37 +1,203 @@
-.finance{
-  .operations{
+.finance {
+  .operations {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .deposit{
+    margin-bottom: 30px;
+
+    .deposit {
       background: #0D1017;
       border: 1px solid rgba(255, 255, 255, 0.03);
       border-radius: 20px;
       padding: 20px;
-      .title{
+
+      .title {
         font-weight: 600;
         font-size: 20px;
         line-height: 21px;
         color: #FFFFFF;
         margin-bottom: 20px;
       }
-      .input{
+
+      .input {
         padding: 15px 20px;
         background: #121721;
         border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 15px;
+
+        label {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          color: #8B949E;
+        }
+
+        input {
+          background: none;
+          width: 450px;
+          outline: none;
+          border: none;
+          color: white;
+        }
+      }
+      .choose{
+        margin-bottom: 20px;
+        .choose__title{
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          color: #56657F;
+          margin-bottom: 10px;
+        }
+        .choose__block{
+          padding: 20px;
+          background: #0C1C2E;
+          border-radius: 10px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #FFFFFF;
+        }
+      }
+      .button{
+        background: #151D26;
+        border-radius: 10px;
+        height: 48px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        cursor: pointer;
       }
     }
-    .withdraw{
+
+    .withdraw {
       background: #0D1017;
       border: 1px solid rgba(255, 255, 255, 0.03);
       border-radius: 20px;
       padding: 20px;
-      .title{
+
+      .title {
         font-weight: 600;
         font-size: 20px;
         line-height: 21px;
         color: #FFFFFF;
         margin-bottom: 20px;
+      }
+
+      .input {
+        margin-bottom: 15px;
+        padding: 15px 20px;
+        background: #121721;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        label {
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          color: #8B949E;
+        }
+        input {
+          background: none;
+          width: 450px;
+          outline: none;
+          border: none;
+          color: white;
+        }
+      }
+      .choose{
+        margin-bottom: 20px;
+        .choose__title{
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          color: #56657F;
+          margin-bottom: 10px;
+        }
+        .choose__block{
+          padding: 20px;
+          background: #0C1C2E;
+          border-radius: 10px;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 18px;
+          color: #FFFFFF;
+        }
+      }
+      .button{
+        background: #151D26;
+        border-radius: 10px;
+        height: 48px;
+        width: 100%;
+        border: none;
+        outline: none;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .history{
+    padding: 20px;
+    background: #0D1017;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    .title{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 21px;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+    table{
+      border-radius: 20px;
+
+      background: rgba(255, 255, 255, 0.02);
+      border-spacing: 0px;
+      border-collapse: collapse;
+      width: 100%;
+      thead{
+        background: #0C1C2E;
+      }
+      tr{
+        height: 68px;
+        th{
+          padding-left: 40px;
+          background: #0C1C2E;
+          text-align: left;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 25px;
+          color: #FFFFFF;
+          &:first-child{
+            border-radius: 20px 0 0 0;
+          }
+          &:last-child{
+            border-radius: 0 20px 0 0;
+          }
+        }
+        td{
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          color: #FFFFFF;
+          padding-left: 40px;
+        }
+        &:nth-child(odd){
+          background: rgba(217, 217, 217, 0.03);
+        }
       }
     }
   }
