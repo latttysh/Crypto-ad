@@ -21,7 +21,7 @@ const Final: FunctionComponent<Props> = (props) => {
                         <div className={s.text}>Вы успешно зарегистрированы! Для входа используйте введённые данные.
                         </div>
                         <div className={s.buttons}>
-                            <NavLink to={"/"}>n
+                            <NavLink to={"/"}>
                                 <button type={"button"} className={s.enter}>Мой кабинет</button>
                             </NavLink>
                             <NavLink to={"/"}>

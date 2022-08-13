@@ -1,6 +1,7 @@
 import React, {FunctionComponent} from 'react';
 import s from "./sidebar.module.scss"
 import StaticModal from "../StaticModal/StaticModal";
+import SupportModal from "../SupportModal/SupportModal";
 import {NavLink} from "react-router-dom";
 
 import {ReactComponent as ReactLogo} from "../../assets/img/Sidebar/logo.svg"
@@ -20,11 +21,13 @@ interface OwnProps {
 type Props = OwnProps;
 
 const Sidebar: FunctionComponent<Props> = (props) => {
-    const [isVisible, setIsVisible] = React.useState(false)
+    const [isExitVisible, setIsExitVisible] = React.useState(false)
+    const [isSupportVisible, setSupportVisible] = React.useState(false)
 
     return (
         <div className={s.sidebar}>
-            {isVisible && <StaticModal close={() => setIsVisible(false)}/>}
+            {isExitVisible && <StaticModal close={() => setIsExitVisible(false)}/>}
+            {isSupportVisible && <SupportModal close={() => setSupportVisible(false)}/>}
             <div className={s.logo}>
                 <ReactLogo/>
             </div>
@@ -79,12 +82,12 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                     <Ad/>
                     <span className={s.title}>Рекламные материалы</span>
                 </div>
-                <div className={s.item}>
+                <div className={s.item} onClick={() => setSupportVisible(true)}>
                     <Support/>
                     <span className={s.title}>Поддержка</span>
                 </div>
             </div>
-            <button className={s.button} onClick={() => setIsVisible(true)}>Выйти</button>
+            <button className={s.button} onClick={() => setIsExitVisible(true)}>Выйти</button>
         </div>
     );
 };

@@ -1,0 +1,83 @@
+.wrapper{
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0, 0.5);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal{
+    display: inline-block;
+    padding: 30px;
+    //background: #0D1017;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    max-width: 840px;
+    width: 100%;
+    border-radius: 20px;
+    background-image: url("../../assets/img/SupportModal/bg.png");
+    background-color:  #0D1017;
+    .block{
+      display: flex;
+      align-items: flex-start;
+      gap: 30px ;
+      img{
+        width: 100%;
+      }
+      .subtitle{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-bottom: 20px;
+      }
+      .infotitle{
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #56657F;
+        margin-bottom: 10px;
+      }
+      .button__info{
+        display: block;
+        background: #0C1C2E;
+        border-radius: 10px;
+        width: 400px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        &:hover{
+          background: #0491FB;
+          box-shadow: 0px 0px 15px rgba(4, 145, 251, 0.4);
+        }
+        &:not(:last-child){
+          margin-bottom: 10px;
+        }
+      }
+      .button__contact{
+        display: block;
+        background: #0491FB;
+        border-radius: 10px;
+        width: 400px;
+        height: 48px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        color: #FFFFFF;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        margin-bottom: 50px;
+        transition: background 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      }
+    }
+  }
+}
