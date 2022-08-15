@@ -74,6 +74,12 @@
         line-height: 18px;
         color: #FFFFFF;
         cursor: pointer;
+        transition: background 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+
+        &:hover{
+          background: #0491FB;
+          box-shadow: 0px 0px 15px rgba(4, 145, 251, 0.4);
+        }
       }
     }
 
@@ -145,6 +151,12 @@
         line-height: 18px;
         color: #FFFFFF;
         cursor: pointer;
+        transition: background 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+
+        &:hover{
+          background: #0491FB;
+          box-shadow: 0px 0px 15px rgba(4, 145, 251, 0.4);
+        }
       }
     }
   }

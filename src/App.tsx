@@ -8,6 +8,7 @@ import Registration from "./Pages/Registration/Registration";
 import News from "./Pages/News/News";
 import Finance from "./Pages/Finance/Finance";
 import Referal from "./Pages/Referal/Referal";
+import MyBundles from "./Pages/MyBundles/MyBundles";
 import {
     Routes,
     Route,
@@ -31,6 +32,7 @@ function App() {
                         <Route path="/finance" element={<Finance/>}/>
                         <Route path="/referal" element={<Referal/>}/>
                         <Route path="/news" element={<News/>}/>
+                        <Route path="/mybundles" element={<MyBundles/>}/>
                     </Routes>
 
                 </div>

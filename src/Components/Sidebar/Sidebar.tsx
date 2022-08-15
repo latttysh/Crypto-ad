@@ -52,10 +52,12 @@ const Sidebar: FunctionComponent<Props> = (props) => {
                         <span className={s.title}>Активировать связку</span>
                     </div>
                 </NavLink>
+                <NavLink to={"/mybundles"}>
                 <div className={s.item}>
                     <MyCart/>
                     <span className={s.title}>Мои связки</span>
                 </div>
+                </NavLink>
                 <NavLink to={"/finance"}>
                     <div className={s.item}>
                         <Wallet/>

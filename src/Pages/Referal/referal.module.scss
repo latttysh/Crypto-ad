@@ -159,6 +159,12 @@
           border: none;
           outline: none;
           cursor: pointer;
+          transition: background 0.2s ease-in-out,box-shadow 0.2s ease-in-out;
+
+          &:hover{
+            background: #0491FB;
+            box-shadow: 0px 0px 15px rgba(4, 145, 251, 0.4);
+          }
         }
       }
       .switchblock{
@@ -177,6 +183,7 @@
           display: inline-block;
           width: 57px;
           height: 25px;
+
         }
 
         /* Hide default HTML checkbox */
@@ -199,6 +206,7 @@
           transition: .4s;
           border-radius: 10px;
           outline: none;
+
         }
 
         .slider:before {
@@ -212,6 +220,7 @@
           -webkit-transition: .4s;
           transition: .4s;
           border-radius: 100%;
+
         }
 
         input:checked + .slider:before {
