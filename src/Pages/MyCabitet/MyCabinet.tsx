@@ -27,50 +27,49 @@ const MyCabinet: FunctionComponent<Props> = (props) => {
                     <button className={s.edit}>Редактировать</button>
                 </div>
                 <div className={s.data}>
-                    <div className={s.balance}>
-                        <div className={s.block}>
-                            <div className={s.header}>
-                                <div className={s.title}>Ваш баланс:</div>
-                                <div className={s.manage}>Управление балансом</div>
+                    <div className={s.first__row}>
+                        <div className={s.balance}>
+                            <div className={s.block}>
+                                <div className={s.header}>
+                                    <div className={s.title}>Ваш баланс:</div>
+                                    <div className={s.manage}>Управление балансом</div>
+                                </div>
+                                <div className={s.count}>1 000,000$</div>
+                                <div className={s.valute}>60 727,27 RUB</div>
                             </div>
-                            <div className={s.count}>1 000,000$</div>
-                            <div className={s.valute}>60 727,27 RUB</div>
+                        </div>
+                        <div className={s.email__block}>
+                            <div className={s.block}>
+                                <div className={s.title}>Ваша электронная почта:</div>
+                                <div className={s.email}>admin@cryptoarbit.com</div>
+                            </div>
+                        </div>
+                        <div className={s.referal}>
+                            <div className={s.block}>
+                                <div className={s.title}>Ваша реферальная ссылка:</div>
+                                <div className={s.link}>https://www.cryptoarbit.com/ref=135413887</div>
+                            </div>
                         </div>
                     </div>
-                    <div className={s.email__block}>
-                        <div className={s.block}>
-                            <div className={s.title}>Ваша электронная почта:</div>
-                            <div className={s.email}>admin@cryptoarbit.com</div>
+                    <div className={s.second__row}>
+                        <div className={s.ip_address}>
+                            <div className={s.block}>
+                                <div className={s.title}>IP при регистрации:</div>
+                                <div className={s.ip}>178.172.246.1</div>
+                            </div>
+                        </div>
+                        <div className={s.auth}>
+                            <div className={s.block}>
+                                <div className={s.title}>Журналы авторизации:</div>
+                                <div className={s.ip}>178.172.246.1</div>
+                                <div className={s.ip}>178.172.246.1</div>
+                                <div className={s.ip}>178.172.246.1</div>
+                                <div className={s.ip}>178.172.246.1</div>
+                                <div className={s.ip}>178.172.246.1</div>
+                            </div>
                         </div>
                     </div>
-                    <div className={s.referal}>
-                        <div className={s.block}>
-                            <div className={s.title}>Ваша реферальная ссылка:</div>
-                            <div className={s.link}>https://www.cryptoarbit.com/ref=135413887</div>
-                        </div>
-                    </div>
-                    <div className={s.referal}>
-                        <div className={s.block}>
-                            <div className={s.title}>Ваша реферальная ссылка:</div>
-                            <div className={s.link}>https://www.cryptoarbit.com/ref=135413887</div>
-                        </div>
-                    </div>
-                    <div className={s.ip_address}>
-                        <div className={s.block}>
-                            <div className={s.title}>IP при регистрации:</div>
-                            <div className={s.ip}>178.172.246.1</div>
-                        </div>
-                    </div>
-                    <div className={s.auth}>
-                        <div className={s.block}>
-                            <div className={s.title}>Журналы авторизации:</div>
-                            <div className={s.ip}>178.172.246.1</div>
-                            <div className={s.ip}>178.172.246.1</div>
-                            <div className={s.ip}>178.172.246.1</div>
-                            <div className={s.ip}>178.172.246.1</div>
-                            <div className={s.ip}>178.172.246.1</div>
-                        </div>
-                    </div>
+
 
                 </div>
             </div>

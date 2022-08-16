@@ -1,6 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import s from "./activatemodal.module.scss"
 import Title from "../Title/Title";
+import SuccessActivationModal from "../SuccessActivationModal/SuccessActivationModal";
 
 import ActivateBundleItem from "../ActivateBundleItem/ActivateBundleItem";
 
@@ -11,17 +12,25 @@ interface OwnProps {
 type Props = OwnProps;
 
 const ActivateModal: FunctionComponent<Props> = (props) => {
+
+    const [isSuccess, setIsSuccess] = React.useState(false)
+    const onContinueClick = () => {
+        // props.close()
+        setIsSuccess(true)
+    }
+
   return (
       <div className={s.wrapper}>
-          <div className={s.modal}>
+          {isSuccess ? <SuccessActivationModal close={()=> props.close()}/> : <div className={s.modal}>
               <Title title={"Подтверждение активации"}/>
               <div className={s.subtitle}>Вы собираетесь активировать:</div>
               <ActivateBundleItem/>
               <div className={s.buttons}>
-                  <button className={s.continue}>Продолжить</button>
+                  <button className={s.continue} onClick={onContinueClick}>Продолжить</button>
                   <button className={s.cancel} onClick={props.close}>Отмена</button>
               </div>
-          </div>
+          </div>}
+
       </div>
   );
 };

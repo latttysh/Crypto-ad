@@ -4,14 +4,23 @@ import img from "../../assets/img/Activate/item.png";
 import SubtypeBundle from "../SubtypeBundle/SubtypeBundle";
 import {ReactComponent as Cart} from "../../assets/img/Activate/cart.svg";
 import hold from "../../assets/img/MyBundles/hold.png"
+import HoldModal from "../HoldModal/HoldModal";
 
 interface OwnProps {}
 
 type Props = OwnProps;
 
 const MyBundleItem: FunctionComponent<Props> = (props) => {
+
+    const [isHoldModalVisible, setIsHoldModalVisible] = React.useState(false)
+
+    const onHoldClick = ()=>{
+        setIsHoldModalVisible(true)
+    }
+
   return (
       <div className={s.mybundleitem}>
+          {isHoldModalVisible && <HoldModal close={()=>setIsHoldModalVisible(false)}/>}
           <img src={hold} alt="" className={s.hold}/>
         <img src={img} alt="img" className={s.img}/>
         <div className={s.title}>Название связки</div>
@@ -44,7 +53,7 @@ const MyBundleItem: FunctionComponent<Props> = (props) => {
         </div>
 
         <div className={s.buttons}>
-          <button className={s.extend}>Продлить</button>
+          <button className={s.extend} onClick={onHoldClick}>Продлить</button>
           <button className={s.take}>Забрать</button>
         </div>
       </div>
