@@ -3,6 +3,7 @@ import SubtypeBundle from "../SubtypeBundle/SubtypeBundle";
 import s from "./bundleitem.module.scss"
 import img from "../../assets/img/Activate/item.png"
 import {ReactComponent as Cart} from "../../assets/img/Activate/cart.svg";
+import ActivateModal from "../ActivateModal/ActivateModal";
 
 interface OwnProps {
 }
@@ -10,8 +11,14 @@ interface OwnProps {
 type Props = OwnProps;
 
 const BundleItem: FunctionComponent<Props> = (props) => {
+    const [isActivateVisible, setIsActivateVisible] = React.useState(false)
+
+    const onActivateClick = () => {
+        setIsActivateVisible(true)
+    }
     return (
         <div className={s.bundleitem}>
+            {isActivateVisible && <ActivateModal close={()=>setIsActivateVisible(false)}/>}
             <img src={img} alt="img" className={s.img}/>
             <div className={s.title}>Название связки</div>
             <div className={s.types}>
@@ -36,7 +43,7 @@ const BundleItem: FunctionComponent<Props> = (props) => {
                     <span className={s.plus}>+</span>
                 </div>
             </div>
-            <button className={s.button}>
+            <button className={s.button} onClick={onActivateClick}>
                 <Cart/>
                 <span>Активировать связку</span>
             </button>
