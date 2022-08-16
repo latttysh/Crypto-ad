@@ -187,6 +187,7 @@
     .user{
       .data{
         .first__row{
+          margin-right: 1vw;
           .balance{
             .header{
               .title{
@@ -198,9 +199,6 @@
               .manage{
                 font-size: 1vw;
               }
-              display: flex;
-              justify-content: space-between;
-              margin-bottom: 2px;
             }
             .count{
               font-size: 3vw;
@@ -260,16 +258,41 @@
         }
       }
     }
-    .stats{
-      margin-bottom: 40px;
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
 
     .finance{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 1015px) {
+  .cabinet{
+    align-items: center;
+    .user{
+      align-items: center;
+      max-height: 100%;
+      .info{
+        display: inline-block;
+      }
+      .data{
+        flex-wrap: wrap;
+        gap: 15px;
+        width: 100%;
+        .first__row{
+          width: 100%;
+        }
+        .second__row{
+          width: 100%;
+        }
+      }
+    }
+    .finance{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       grid-column-gap: 20px;
       grid-row-gap: 20px;
     }
