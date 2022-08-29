@@ -298,3 +298,14 @@
     }
   }
 }
+@media (max-width: 850px) {
+  .cabinet{
+    .user{
+      flex-wrap: wrap;
+      .info{
+        width: 100%;
+      }
+    }
+  }
+
+}
