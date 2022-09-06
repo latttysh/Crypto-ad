@@ -1,6 +1,6 @@
 import React, { FunctionComponent } from 'react';
 import s from "./mybundles.module.scss"
-import {ReactComponent as Arrow} from "../../assets/img/MyBundles/arrow.svg";
+// import {ReactComponent as Arrow} from "../../assets/img/MyBundles/arrow.svg";
 import MyBundleItem from "../../Components/MyBundleItem/MyBundleItem";
 
 import Title from "../../Components/Title/Title";
@@ -18,7 +18,7 @@ const MyBundles: FunctionComponent<Props> = (props) => {
           <div className={s.options}>
             <div className={s.named}>
               <span>Название связки (USDT/BNB)</span>
-              <Arrow/>
+              {/*<Arrow/>*/}
             </div>
               <div className={s.bundle__count}>
                   <span className={s.name}>Количество связок</span>

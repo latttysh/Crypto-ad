@@ -3,7 +3,7 @@ import s from "./mybundleitem.module.scss"
 import img from "../../assets/img/Activate/item.png";
 import SubtypeBundle from "../SubtypeBundle/SubtypeBundle";
 import {ReactComponent as Cart} from "../../assets/img/Activate/cart.svg";
-import hold from "../../assets/img/MyBundles/hold.png"
+import hold from "../../assets/img/MyBundleItem/hold.png"
 import HoldModal from "../HoldModal/HoldModal";
 
 interface OwnProps {}

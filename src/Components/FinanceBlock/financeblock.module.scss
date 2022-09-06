@@ -52,3 +52,42 @@
     color: #FFFFFF;
   }
 }
+
+@media (max-width: 1300px) {
+  .financeblock{
+    background: #0D1017;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    position: relative;
+    z-index: -1;
+    &::before{
+      position: absolute;
+      content: '';
+      display: block;
+      height: 80%;
+      width: 5px;
+      background: #0491FB;
+      border-radius: 50px;
+      left: 0;
+    }
+    svg{
+      width: 3vw;
+    }
+    .title{
+      font-size: 2vw;
+    }
+    .deposit{
+      font-size: 1.2vw;
+    }
+    .earned{
+      font-size: 1.2vw;
+    }
+    .count{
+      font-size: 2vw;
+    }
+  }
+}
