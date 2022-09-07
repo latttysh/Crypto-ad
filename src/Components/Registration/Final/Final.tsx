@@ -18,14 +18,11 @@ const Final: FunctionComponent<Props> = (props) => {
                 <Title title={"Регистрация аккаунта"}/>
                 <div className={s.block}>
                     <div>
-                        <div className={s.text}>Вы успешно зарегистрированы! Для входа используйте введённые данные.
+                        <div className={s.text}>Вы успешно зарегистрированы! Для активации вашего аккаунта перейдите по ссылке из письма на почте, которую вы указали.
                         </div>
                         <div className={s.buttons}>
                             <NavLink to={"/"}>
-                                <button type={"button"} className={s.enter}>Мой кабинет</button>
-                            </NavLink>
-                            <NavLink to={"/"}>
-                                <button className={s.cancel}>На главную</button>
+                                <button type={"button"} className={s.enter}>На главную</button>
                             </NavLink>
                         </div>
                     </div>

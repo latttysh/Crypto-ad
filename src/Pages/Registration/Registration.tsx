@@ -11,8 +11,7 @@ const Registration: FunctionComponent<Props> = (props) => {
     console.log(step)
   return (<div>
       {step === 0 && <SetInfo next={()=> setStep(step+1)}/>}
-      {step === 1 && <SetAvatar next={()=> setStep(step+1)}/>}
-      {step === 2 && <Final/>}
+      {step === 1 && <Final/>}
   </div>);
 };
 

@@ -14,6 +14,7 @@ import {
     Route,
     useLocation
 } from "react-router-dom";
+import LoginAuth from "./Pages/LoginAuth/LoginAuth";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/referal" element={<Referal/>}/>
                         <Route path="/news" element={<News/>}/>
                         <Route path="/mybundles" element={<MyBundles/>}/>
+                        <Route path="/login/:id" element={<LoginAuth/>}/>
                     </Routes>
 
                 </div>
